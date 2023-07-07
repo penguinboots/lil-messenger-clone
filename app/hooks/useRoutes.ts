@@ -6,6 +6,7 @@ import { signOut } from "next-auth/react";
 
 import useConversation from "./useConversation";
 
+// Dynamically change active state based on current route & whether conversation is open
 const useRoutes = () => {
   const pathname = usePathname();
   const { conversationId } = useConversation();
