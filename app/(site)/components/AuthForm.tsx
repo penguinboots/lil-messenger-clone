@@ -22,7 +22,7 @@ const AuthForm = () => {
   // Check if curent session is authenticated
   useEffect(() => {
     if (session?.status === "authenticated") {
-      router.push('/users');
+      router.push("/users");
     }
   }, [session?.status, router]);
 
@@ -52,9 +52,11 @@ const AuthForm = () => {
   // Toast error popup if failure
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setIsLoading(true);
+    // Create account, sign in if successful
     if (variant === "REGISTER") {
       axios
         .post("/api/register", data)
+        .then(() => signIn("credentials", data))
         .catch(() => toast.error("Something went wrong!"))
         .finally(() => setIsLoading(false));
     }
@@ -64,11 +66,14 @@ const AuthForm = () => {
         redirect: false,
       })
         .then((callback) => {
+          // Failure: popup
           if (callback?.error) {
             toast.error("Invalid credentials");
           }
+          // Success: popup, redirect to users
           if (callback?.ok && !callback?.error) {
             toast.success("Logged in!");
+            router.push("/users");
           }
         })
         .finally(() => setIsLoading(false));
