@@ -1,3 +1,5 @@
+// Displayed when nothing is selected
+
 const EmptyState = () => {
   return (
     <div
