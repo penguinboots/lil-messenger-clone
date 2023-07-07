@@ -35,6 +35,7 @@ const AuthForm = () => {
     },
   });
 
+  // Log in or register with text inputs
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setIsLoading(true);
     if (variant === "REGISTER") {
@@ -45,6 +46,7 @@ const AuthForm = () => {
     }
   };
 
+  // Log in with social button
   const socialAction = (action: string) => {
     setIsLoading(true);
     // NextAuth social sign in
@@ -105,9 +107,9 @@ const AuthForm = () => {
             >
               <div
                 className="
-              w-full
-              border-t
-              border-gray-300"
+                  w-full
+                  border-t
+                border-gray-300"
               />
             </div>
             <div

@@ -1,5 +1,4 @@
 "use client";
-
 import clsx from "clsx";
 
 interface ButtonProps {
@@ -11,6 +10,7 @@ interface ButtonProps {
   danger?: boolean;
   disabled?: boolean;
 }
+
 const Button: React.FC<ButtonProps> = ({
   type,
   fullWidth,
