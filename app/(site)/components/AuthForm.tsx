@@ -32,11 +32,9 @@ const AuthForm = () => {
 
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setIsLoading(true);
-
     if (variant === "REGISTER") {
       // Axios register
     }
-
     if (variant === "LOGIN") {
       // NextAuth sign in
     }
@@ -44,7 +42,6 @@ const AuthForm = () => {
 
   const socialAction = (action: string) => {
     setIsLoading(true);
-
     // NextAuth social sign in
   };
 
@@ -57,19 +54,18 @@ const AuthForm = () => {
       sm:max-w-md
     "
     >
-      <div className="
-      bg-white
-      px-4
-      py-8
-      shadow
-      sm:rounded-lg
-      sm:px-10
-      ">
-        <form
-          className="space-y-6"
-          onSubmit={handleSubmit(onSubmit)}
-        >
-          <Input />
+      <div
+        className="
+          bg-white
+          px-4
+          py-8
+          shadow
+          sm:rounded-lg
+          sm:px-10
+          "
+      >
+        <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
+          <Input id="email" label="Email" register={register} errors={errors} />
         </form>
       </div>
     </div>
