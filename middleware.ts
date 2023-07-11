@@ -8,5 +8,5 @@ export default withAuth({
 
 // Protect all routes inside users
 export const config = {
-  matcher: ["/users/:path*"],
+  matcher: ["/users/:path*", "/conversations/:path*"],
 };
