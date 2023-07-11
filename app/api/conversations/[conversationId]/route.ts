@@ -18,6 +18,7 @@ export async function DELETE(
       return new NextResponse("Unauthorized", { status: 401 });
     }
 
+    // two-step delete process allows live updates through pusher
     const existingConversation = await prisma.conversation.findUnique({
       where: {
         id: conversationId,
