@@ -36,13 +36,13 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         <div className="fixed inset-0 z-10 overflow-y-auto">
           <div
             className="
-          flex
-          min-h-full
-          items-center
-          justify-center
-          p-4
-          text-center
-          sm:p-0
+            flex
+            min-h-full
+            items-center
+            justify-center
+            p-4
+            text-center
+            sm:p-0
           "
           >
             <Transition.Child
@@ -63,6 +63,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
                 bg-white
                 px-4
                 pb-4
+                pt-5
                 text-left
                 shadow-xl
                 transition-all
