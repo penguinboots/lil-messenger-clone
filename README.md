@@ -1,6 +1,6 @@
 # Lil Messenger Clone
 
-A real-time Facebook Messenger clone. Uses Next, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher, and more. Responsive for desktop, tablet, and mobile views. Hosted [here](https://lil-messenger-clone.vercel.app/) on Vercel.
+A full-stack, real-time Messenger clone. Uses Next, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher, and more. Responsive for desktop, tablet, and mobile views. Hosted [here](https://lil-messenger-clone.vercel.app/) on Vercel.
 
 ## Main Features
 - Real-time messaging using Pusher
@@ -10,7 +10,8 @@ A real-time Facebook Messenger clone. Uses Next, React, Tailwind, Prisma, MongoD
 - Active/offline user status
 - Custom display names and avatars (Cloudinary)
 - Image attachments (Cloudinary)
-- Server error handling with react-toast
+- Server error handling (Hot Toast)
+- Authentation with NextAuth - log in with email, Github, or Google
 - Data persisted through MongoDB database using Prisma
 
 ## Showcase
