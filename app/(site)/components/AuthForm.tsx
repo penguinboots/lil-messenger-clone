@@ -113,7 +113,7 @@ const AuthForm = () => {
           sm:rounded-lg
           sm:px-10"
       >
-        <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
+        <form autoComplete="off" className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
           {variant === "REGISTER" && (
             <Input
               id="name"
