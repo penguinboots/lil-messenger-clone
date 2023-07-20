@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lil Messenger Clone
 
-## Getting Started
+A real-time Facebook Messenger clone. Uses Next, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher, and more. Responsive for desktop, tablet, and mobile views. Hosted [here](https://lil-messenger-clone.vercel.app/) on Vercel.
 
-First, run the development server:
+## Main Features
+- Real-time messaging using Pusher
+- Message notifications and read-receipts
+- One-on-one and group chat functionality
+- Create, manage, and delete conversations
+- Active/offline user status
+- Custom display names and avatars (Cloudinary)
+- Image attachments (Cloudinary)
+- Server error handling with react-toast
+- Data persisted through MongoDB database using Prisma
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Real-time messaging
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Packages
+- `axios`
+- `bcrypt`
+- `clsx`
+- `lodash`
+- `next-auth`
+- `next-cloudinary`
+- `pusher`
+- `react-hot-toast`
+- `react-icons`
