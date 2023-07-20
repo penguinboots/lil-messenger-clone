@@ -14,7 +14,7 @@ A real-time Facebook Messenger clone. Uses Next, React, Tailwind, Prisma, MongoD
 - Data persisted through MongoDB database using Prisma
 
 ## Showcase
-
+** NOTE: Some visual issues with .gif recordings. Sorry!
 ### New user registration
 !["New User"](/docs/lmc_new.gif)
 
