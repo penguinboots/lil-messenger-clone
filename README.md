@@ -13,7 +13,28 @@ A real-time Facebook Messenger clone. Uses Next, React, Tailwind, Prisma, MongoD
 - Server error handling with react-toast
 - Data persisted through MongoDB database using Prisma
 
-### Real-time messaging
+## Showcase
+
+### New user registration
+!["New User"](/docs/lmc_new.gif)
+
+### Unread messages, read receipts
+!["Unread messages, read receipts"](/docs/lmc_receipts.gif)
+
+### Profile customization
+!["Change display picture"](/docs/lmc_custom.gif)
+
+### Group chats
+!["Group chat creation"](/docs/lmc_new.gif)
+
+### Image attachments
+!["Image attachments"](docs/lmc_image.gif)
+
+### Live updates
+!["Live updates"](/docs/lmc_live.gif)
+
+### Active status
+!["Active status change"](docs/lmc_status.gif)
 
 ## Packages
 - `axios`
