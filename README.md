@@ -2,6 +2,8 @@
 
 A full-stack, real-time Messenger clone. Uses Next, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher, and more. Responsive for desktop, tablet, and mobile views. Hosted [here](https://lil-messenger-clone.vercel.app/) on Vercel.
 
+Guided by an amazing tutorial from [Code with Antonio](https://www.youtube.com/@codewithantonio).
+
 ## Main Features
 - Real-time messaging using Pusher
 - Message notifications and read-receipts
